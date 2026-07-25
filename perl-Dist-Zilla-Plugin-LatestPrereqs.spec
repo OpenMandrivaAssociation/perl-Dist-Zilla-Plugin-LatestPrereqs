@@ -1,15 +1,15 @@
 %define upstream_name    Dist-Zilla-Plugin-LatestPrereqs
-%define upstream_version 0.3
+%define upstream_version 0.4
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Adjust prereqs to use latest version available
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/melo/dist-zilla-tools
+Source0:	https://cpan.metacpan.org/authors/id/M/ME/MELO/Dist-Zilla-Plugin-LatestPrereqs-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
