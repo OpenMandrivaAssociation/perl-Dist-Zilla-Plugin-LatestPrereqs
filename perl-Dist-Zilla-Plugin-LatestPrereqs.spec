@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-LatestPrereqs
-%define upstream_version 0.4
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.4
+Release:	2
 
 Summary:	Adjust prereqs to use latest version available
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/melo/dist-zilla-tools
-Source0:	https://cpan.metacpan.org/authors/id/M/ME/MELO/Dist-Zilla-Plugin-LatestPrereqs-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/ME/MELO/Dist-Zilla-Plugin-LatestPrereqs-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ You can rebuild your Task module on a regular basis to make sure it has the
 latest versions of your dependencies.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
